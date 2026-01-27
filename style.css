@@ -6,14 +6,18 @@
 
     Darkblue: 2E4561
     Darkerblue: 08121E
-    
+
     Darkgreen: 90E0C1
     Lightgreen: C5EFCB
 
-    Lightpink: C37D92
+    Lightpink: ce718d
     DarkPink: A87380
 
 */
+
+* {
+    font-weight: 300;
+}
 
 body {
     font-family: "Google Sans Flex", "Lucida Sans", sans-serif;
@@ -25,13 +29,21 @@ body {
     height: 100vh;
 }
 
+.marker {
+    font-family: "Permanent Marker", "Lucida Sans", sans-serif;
+}
+
+.pixel {
+    font-family: "Bitcount Single", "Courier New", sans-serif;
+}
+
 .header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 32px;
-    padding-top: 8px;
+    padding: 8px 16px;
     flex-shrink: 0;
+    background-color: #90E0C1;
 }
 
 .headerlinks {
@@ -57,15 +69,11 @@ body {
     font-size: 24px;
 }
 
-
-.emphasis {
-    font-weight: bold;
-}
-
 .info {
     display: flex;
     flex-direction: column;
     flex-shrink: 1;
+    background-color: #C5EFCB;
 }
 
 .infoheader {
@@ -84,10 +92,11 @@ body {
     align-items: center;
     gap: 8px;
     flex-shrink: 1;
+    margin: 32px 0;
 }
 
 .quotetext {
-    font-size: 32px;
+    font-size: 42px;
 }
 
 .quotewriter {
@@ -99,6 +108,8 @@ body {
     align-items: stretch;
     flex-shrink: 1;
     justify-content: center;
+    background-color: #C5EFCB;
+    padding: 8px;
 }
 
 .advertcontainer {
@@ -111,6 +122,8 @@ body {
     display: flex;
     justify-content: center;
     flex-shrink: 0;
+    background-color: #2E4561;
+    color: aliceblue;
 }
 
 .nomargin {
@@ -121,14 +134,24 @@ body {
     height: auto;
 }
 
+.emphasis {
+    font-weight: bold;
+    color: #ce718d;
+}
+
 li {
     text-decoration: none;
     padding: 0;
 } 
 
 button {
-    height: 36px;
+    font-size: 16px;
     width: 72px;
+    background-color: #A87380;
+    color: aliceblue;
+    border: 0;
+    border-radius: 8px;
+    padding: 8px;
 }
 
 h4 {
