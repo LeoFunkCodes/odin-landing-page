@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Permanent+Marker&display=swap');
+
+/* COLORS:
+
+    Darkblue: 2E4561
+
+    Darkgreen: 90E0C1
+    Lightgreen: C5EFCB
+
+    Lightpink: C37D92
+    DarkPink: A87380
+
+*/
+
+body {
+    font-family: "Google Sans Flex", "Lucida Sans", sans-serif;
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 0;
+    gap: 16px;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 32px;
+    padding-top: 8px;
+    flex-shrink: 0;
+}
+
+.headerlinks {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    flex-shrink: 1;
+}
+
+.herotext {
+    margin: 0;
+}
+
+.heroparagraph {
+    font-size: 24px;
+}
+
+
+.emphasis {
+    font-weight: bold;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+}
+
+.infoheader {
+    align-self: center;
+}
+
+.infoaboutme {
+    display: flex;
+    gap: 16px;
+    justify-content: space-evenly;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 1;
+}
+
+.quotetext {
+    font-size: 32px;
+}
+
+.quotewriter {
+    font-size: 16px;
+}
+
+.advert {
+    display: flex;
+    align-items: stretch;
+    flex-shrink: 1;
+    justify-content: center;
+}
+
+.advertcontainer {
+    gap: 12px;
+    display: flex;
+    align-items: stretch;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.nomargin {
+    margin: 0;
+}
+
+.stretchbutton {
+    height: auto;
+}
+
+li {
+    text-decoration: none;
+    padding: 0;
+} 
+
+button {
+    height: 36px;
+    width: 72px;
+}
+
+h4 {
+    margin: 8px 0;
+}
