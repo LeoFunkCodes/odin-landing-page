@@ -2,16 +2,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Permanent+Marker&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Permanent+Marker&display=swap');
 
-/* COLORS:
+/* Notes:
+
+    I used cssgradient.io and cssportal to create the colored gradients.
+
+    COLORS:
 
     Color:
-    DarkBlue: #355070
-    DarkLavender: #82589c
-    DarkRose: #d48092
+
+    Blue: #355070
+    BlueDark: #192B40
+
+    Lavender: #82589c
+    LavenderDark: #673E80
+
+    Rose: #d48092
     Coral: #f8acac
+
+    LightCoral: #f7bbb9
+
+
     LightBronze: #ffccb3
 
-    Grayacale:
+    Grayscale:
 
     Black: #181E25
     White: #ffffff
@@ -21,7 +34,7 @@
 */
 
 * {
-    font-weight: 300;
+    font-weight: 350;
     color: #ffffff;
 }
 
@@ -47,11 +60,16 @@ body {
     color: #181E25 !important;
 }
 
+.bold {
+    font-weight: 700 !important;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
     padding: 8px 16px;
-    background-color: #355070;
+    background: #355070;
+    background: linear-gradient(90deg, rgba(53, 80, 112, 1) 0%, rgba(25, 43, 64, 1) 100%);
 }
 
 .headerlinks {
@@ -66,8 +84,10 @@ body {
     align-items: center;
     gap: 16px;
     flex-shrink: 1;
-    background-color: #82589c;
+    background: #82589C;
+    background: linear-gradient(0deg, rgba(130, 88, 156, 1) 0%, rgba(113, 67, 128, 1) 100%);
     padding: 48px;
+    margin: 3px 0;
 }
 
 .herotext {
@@ -83,7 +103,8 @@ body {
     display: flex;
     flex-direction: column;
     flex-shrink: 1;
-    background-color: #d48092;
+    background: #D48092;
+    background: linear-gradient(180deg, rgba(212, 128, 146, 1) 0%, rgba(248, 172, 172, 1) 100%);
     gap: 16px;
     padding: 16px;
 }
@@ -111,6 +132,11 @@ body {
 
 .quotetext {
     font-size: 42px;
+    background: #673E80;
+    background: linear-gradient(to left, #673E80 0%, #D48092 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
 }
 
 .quotewriter {
@@ -122,7 +148,8 @@ body {
     align-items: stretch;
     flex-shrink: 1;
     justify-content: center;
-    background-color: #f8acac;
+    background: #F8ACAC;
+    background: linear-gradient(180deg, rgba(248, 172, 172, 1) 0%, rgb(247, 187, 185) 100%);
     padding: 8px;
 }
 
@@ -131,12 +158,14 @@ body {
     display: flex;
     align-items: stretch;
     padding: 16px;
+    font-weight: 700;
 }
 
 .footer {
     display: flex;
     justify-content: center;
     background-color: #ffccb3;
+    margin-top: 3px;
 }
 
 .nomargin {
@@ -149,7 +178,17 @@ body {
 
 .emphasis {
     font-weight: bold;
-    color: #ffc7aa;
+    background: #FFCCB3;
+    background: linear-gradient(to left, #FFCCB3 0%, #F8ACAC 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+img {
+    border-radius: 24px;
+    border: solid #ffffff 6px;
+    box-shadow: 8px 8px 4px rgba(255, 199, 170, 0.7);
 }
 
 button.marker {
@@ -164,11 +203,12 @@ li {
 
 button {
     font-size: 16px;
-    width: 72px;
+    width: 88px;
     background-color: #d48092;
-    border: 0;
+    border: outset 4px;
     border-radius: 8px;
-    padding: 8px;
+    padding: 8px 12px;
+    border-color: #f7bbb9;
 }
 
 h4 {
