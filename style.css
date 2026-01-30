@@ -99,25 +99,33 @@ body {
     font-size: 24px;
 }
 
-.info {
+.projects {
     display: flex;
     flex-direction: column;
     flex-shrink: 1;
     background: #D48092;
-    background: linear-gradient(180deg, rgba(212, 128, 146, 1) 0%, rgba(248, 172, 172, 1) 100%);
+    background: linear-gradient(180deg, rgba(212, 128, 146, 1) 0%, rgb(236, 158, 168) 85%, rgba(248, 172, 172, 1) 100%);
     gap: 16px;
-    padding: 16px;
+    padding: 24px 16px 32px;
 }
 
-.infoheader {
+.projectsheader {
     align-self: center;
 }
 
-.infoaboutme {
+.projectslist {
     display: flex;
     gap: 16px;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     font-weight: bold;
+    padding: 0 32px;
+}
+
+.project {
+    display: flex;
+    flex-flow: column wrap;
+    width: 275px;
+    gap: 12px;
 }
 
 .quote {
